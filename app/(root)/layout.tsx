@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Navbar from "@/app/components/Navbar";
+import Navbar from "@/components/Navbar";
 
 // this layout will apply for the all the routes in (root) folder directory
 export default function Layout({
