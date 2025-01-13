@@ -4,8 +4,12 @@ import { formatDate } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Author, Startup } from "@/sanity/types";
 
-const StartupCard = ({ post }: { post: StartupTypeCard }) => {
+// creating type for prop using generated sanity type
+export type StartupCardType = Omit<Startup, "author"> & { author?: Author };
+
+const StartupCard = ({ post }: { post: StartupCardType }) => {
   const {
     _createdAt,
     views,
