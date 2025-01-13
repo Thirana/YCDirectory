@@ -11,8 +11,10 @@ export default async function Home({
   // getting the search params
   const query = (await searchParams).query;
 
+  const params = { search: query || null };
+
   // sanityFetch () function helps to fetch data every time data store gets updated
-  const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY });
+  const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
 
   return (
     <>
