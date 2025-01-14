@@ -7,5 +7,5 @@ export const client = createClient({
   dataset,
   apiVersion,
   // if this is true, ISR will be enabled
-  useCdn: false, // Set to false if statically generating pages, using ISR or tag-based revalidation
+  useCdn: true, // Set to false if statically generating pages, using ISR or tag-based revalidation
 });
