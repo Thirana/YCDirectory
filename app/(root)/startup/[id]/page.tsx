@@ -35,7 +35,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
         <img
           src={post.image}
           alt="thumbnail"
-          className="w-full h-auto rounded-xl"
+          className="w-full lg:w-3/4 h-auto rounded-xl mx-auto"
         />
         <div className="space-y-5 mt-10 max-w-4xl mx-auto">
           <div className="flex-between gap-5">
