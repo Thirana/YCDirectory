@@ -4,8 +4,8 @@ A Next.js 15 platform where individuals can submit their startup and project ide
 
 👉 View [deployed site](https://yc-directory-tawny-two.vercel.app/)
 
+
 ## ⚙️ Tech Stack
-***
 * React 19
 * Next.js 15
 * Sanity
@@ -15,7 +15,6 @@ A Next.js 15 platform where individuals can submit their startup and project ide
 
 
 ## 🔋 Features
-***
 👉 Live Content API: Displays the latest startup ideas dynamically on the homepage using Sanity's Content API.
 
 👉 GitHub Authentication: Allows users to log in easily using their GitHub account.
@@ -38,21 +37,20 @@ A Next.js 15 platform where individuals can submit their startup and project ide
 
 
 ## 🤸 Quick Start
-***
 Follow these steps to set up the project locally on your machine.
 
-### Cloning the Repository
+#### Cloning the Repository
 ```cmd
 git clone https://github.com/Thirana/YCDirectory.git
 cd YCDirectory
 ```
 
-### Installation
+#### Installation
 ```cmd
 npm install
 ```
 
-### Set Up Environment Variables
+#### Set Up Environment Variables
 Create a new file named `.env.local` in the root of your project and add the following content:
 ```dotenv
 NEXT_PUBLIC_SANITY_PROJECT_ID=
@@ -66,7 +64,7 @@ AUTH_GITHUB_SECRET=
 ```
 Replace the placeholder values with your actual Sanity credentials. You can obtain these credentials by signing up & creating a new project on the [Sanity website](https://www.sanity.io/)
 
-### Running the Project
+#### Running the Project
 ```cmd
 npm run dev
 ```
